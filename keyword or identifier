@@ -1,0 +1,13 @@
+%{
+#include<stdio.h>
+%}
+%%
+if|else|while|int|switch|for|char  {printf("it is a keyword",yytext);}
+[a-zA-Z0-9]+ { printf("it is an identifier",yytext);}
+%%
+int yywrap()
+{}
+int main()
+{
+while(yylex());
+}
