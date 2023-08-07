@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+int a,b;
+double output;
+printf("Please enter any 2 numbers \n");
+scanf("%d\n\t%d",&a,&b);
+output=(a-b)*(a+b*a)+a/b;
+printf("output of %d and %d is = %lf ",a, b,output);
+return 0;
+}
